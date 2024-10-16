@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500, 700;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-font {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+}
+
+.product-preview-card-main-container {
+    border-radius: 0.5em;
+    background-color: hsl(0, 0%, 100%);
+    margin: 5% 2.5% 5% 2.5%;
+}
+
+.product-image-container {
+    background-image: url(images/image-product-mobile.jpg);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 16.25em;
+    margin-bottom: 0;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.product-details-main-container {
+    padding: 1em;
+    margin-top: 0;
+    background: transparent;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.product-category {
+    background: transparent;
+    font-size: x-large;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-name {
+    background: transparent;
+    margin-top: 0.3em;
+    font-size: xx-large;
+}
+
+.product-details {
+    background: transparent;
+    margin-top: 1rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-price-container {
+    background: transparent;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.product-price-container p {
+    background: transparent;
+}
+
+.product-price-container p:nth-child(1) {
+    color: hsl(158, 36%, 37%);
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.product-price-container p:nth-child(2) {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-add-to-cart-button-container {
+    background: transparent;
+    margin-top: 2rem;
+}
+
+.product-add-to-cart-button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem;
+    color: hsl(0, 0%, 100%);
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.add-cart-icon {
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    margin-top: 0.1em;
+}
+
+@media (min-width: 391px) {
+    .product-preview-card-main-container {
+        display: flex;
+        flex-direction: row;
+        margin: 10% 20% 0 20%;
+        width: 40em;
+    }
+
+    .product-image-container {
+        background-image: url(images/image-product-desktop.jpg);
+        width: 150%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 26.5em;
+        margin-bottom: 0;
+        border-radius: 0.5em 0 0 0.5em;
+    }
+
+    .product-details-main-container {
+        padding: 1.5em;
+    }
+
+    .attribution {
+        margin-top: 1em;
+    }
+}
